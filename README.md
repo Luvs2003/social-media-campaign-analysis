@@ -24,6 +24,8 @@ The raw dataset (400 rows) had realistic data quality issues that needed to be r
 - **Missing values** — blank `clicks` and `comments` fields filled with `0`, based on the reasoning that no recorded event means no click/comment occurred
 - **Duplicate rows** — 8 exact duplicates identified and removed
 - **Inconsistent categorical values** — lowercase platform names (e.g. `instagram`) standardized to match the rest (`Instagram`)
+- <img width="1920" height="1080" alt="Screenshot 2026-07-22 202948" src="https://github.com/user-attachments/assets/3165d85a-1e78-4eb2-9781-c933975532f7" />
+
 
 ## 🔍 SQL Analysis
 
@@ -33,6 +35,8 @@ Key techniques used in MySQL:
 - `CASE WHEN` — to bucket exact posting hours into broader time windows (Morning / Afternoon / Evening / Night) for more statistically reliable comparisons
 - Normalized metrics — engagement rate calculated as `(likes + comments + shares) / reach`, rather than raw counts, to fairly compare posts across different audience sizes
 - ROI analysis — `engagement per dollar spent` calculated per platform to compare cost-efficiency, not just raw popularity
+- <img width="1920" height="1080" alt="Screenshot 2026-07-24 120053" src="https://github.com/user-attachments/assets/91f9878c-2858-40a9-a99c-6666b264df04" />
+
 
 ## 📊 Key Findings
 
@@ -49,7 +53,8 @@ Total engagement alone can be misleading. When normalized for spend, TikTok was 
 
 - `social_media_campaign_data.csv` — cleaned dataset
 - SQL queries used for analysis
-- Power BI dashboard (screenshots / `.pbix` file)
+- Power BI dashboard (screenshots / `.pbix` file)<img width="1920" height="1080" alt="Screenshot 2026-07-24 130255" src="https://github.com/user-attachments/assets/1dcbff2f-8c82-449a-8445-552ffbeaf241" />
+
 
 ## 🎯 What I Learned
 
